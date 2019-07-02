@@ -1,0 +1,1119 @@
+
+        /****************Базовые настройки******************/
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            font-family: 'Roboto Slab', sans-serif;
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            margin: 0;
+        }
+
+        /****************ПОВТОРЯЮЩИЕСЯ БЛОКИ*************/
+
+        .title{
+            h2{
+                text-shadow: 0px 0px 20px #fff;
+                font-size: 42px;
+                font-weight: bold;
+                line-height: 60px;
+                color: #6666cc;
+                padding: 40px;
+            }  
+        }
+        /****************ГЛАВНЫЙ ЭКРАН******************/
+        header{
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            .top-header{
+                .menu-btn{
+                    display: none;
+                }
+                .logo{
+                    h2{
+                        font-weight: bold;
+                        color: #ff9b43;
+                    }
+                }
+                nav{
+                    margin-top: 10px;
+                    
+                    ul{
+                        li{
+                            list-style: none;
+                            display: inline-block;
+                            a{
+                                font-weight: bold;
+                                font-size: 18px;
+                                text-decoration: none;
+                                padding: 10px 15px;
+                                font-family: ;
+                                color: #666;
+                                &:hover{
+                                    transition: all 0.1s ease-in-out;
+                                    background: #ffa453;
+                                    border-radius: 8px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .phone{
+                    text-align: right;
+                    a{
+                        text-decoration: none;
+                        color: #ff9b43;
+                        font-size: 26px;
+                        font-weight: bold;
+                    }
+                    p{
+
+                        font-size: 13px;
+                        opacity: .7;
+                        sup{
+                            border-bottom: 0.1px solid #999
+                        }
+                    }
+                }
+            }
+        }
+        /****************ГЛАВНЫЙ ЭКРАН******************/
+        
+        section#main{
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            position: relative;
+            height: 600px;
+            background: url('../img/banner.jpg') center center no-repeat;
+
+            .head-title{
+                position: absolute;
+                background: rgba(128, 255, 255, 0.5);
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                h2{
+                    text-transform: uppercase;
+                    text-shadow: 2px 2px 10px #000;
+                    margin: 70px 0 25px 0;
+                    color: #fff;
+                    font-size: 42px;
+                    font-weight: bold;
+                    letter-spacing: 0.1em;
+                }
+                p{
+                    text-transform: uppercase;
+                    text-shadow: 0px 0px 7px #000;
+                    font-size: 24px;
+                    font-weight: bold;
+                    line-height: 26px;
+                    color: #fff;
+                    letter-spacing: 0.07em;
+                }
+                button{
+                    margin-top: 150px;
+                    margin-bottom: 70px;
+                    text-shadow: 0px 5px 5px #fff;
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding: 10px 45px;
+                    letter-spacing: 0.07em;
+                    background:  inherit;
+                    border: 3px solid #5479e4;
+                    color: #3f4aaf;
+                    transition: all 0.04s;
+                    &:hover{
+                        margin-bottom: 62px;
+                        box-shadow: 0px 0px 15px #fff;
+                        background: #5479e4;
+                        color: #fff;
+                        padding: 15px 40px;
+                        border: #fff solid 2px;
+                        transition: all 0.04s;
+                        letter-spacing: 0.07em;
+                        text-shadow: 0px 2px 10px #000;
+                        font-size: 24px;
+                        font-weight: 900;
+
+                    }
+                }
+            }
+        }
+        /****************О НАС******************/
+
+        section#about-us{
+            .about-us-1{
+                background: #fdcca8;
+            }
+            .about-us-2{
+                background: #a8fdfa;
+            }
+            .about-us-3{
+                background: #82ffae;
+            }
+            .main-work{
+                padding: 100px 35px;
+                h3{
+                    text-shadow: 0px 0px 7px #fff;
+                    font-size: 36px;
+                    line-height: 28px;
+                    font-weight: bold;
+                    color: #666;
+                    padding-bottom: 40px;
+                }
+                p{
+                    text-shadow: 0px 0px 7px #fff;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #666;
+
+                }
+            }
+            .about-us{
+                padding: 75px 0;
+                .about-us-text{
+                    margin-top: 50px;
+                h3{
+                    text-shadow: 0px 0px 7px #fff;
+                    font-size: 32px;
+                    line-height: 28px;
+                    font-weight: bold;
+                    color: #666;
+                    padding-bottom: 40px;
+                }
+                p{
+                    text-shadow: 0px 0px 7px #fff;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #666;
+
+                }
+            }
+            .about-us-img{
+                img{
+                    box-shadow: 5px 5px 35px #fff;
+                    border-radius: 15px;
+                    width: 520px;
+                    height: 336px;
+                }
+            }
+          }
+        }
+
+
+        section#helps{
+            .card-1, .card-2, .card-3{
+                padding: 50px;
+                .description{
+                    padding: 60px 0 30px 0;
+                    h4{
+                        text-shadow: 0px 0px 25px #21c95c;
+                        font-size: 30px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        color: #666;
+                        padding-bottom: 40px;
+                    }
+                    p{
+                        text-shadow: 0px 0px 40px #fdcca8;
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: #666;
+                    }
+                }
+                .helps-img{
+                    img{
+                        box-shadow: 5px 5px 35px #1440fd;
+                        border-radius: 30px;
+                        width: 450px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        /****************ПРЕИМУЩЕСТВА******************/
+
+        section#best{
+            padding: 30px;
+            background: #dbf9fb;
+            .best{
+                padding: 55px;
+                img{
+                    box-shadow: 5px 5px 35px #fff;
+                    border-radius: 50%;
+                    
+                }
+                h4{
+                    text-shadow: 0px 0px 7px #fff;
+                    font-size: 22px;
+                    line-height: 32px;
+                    font-weight: bold;
+                    color: #999;
+                    padding-top: 25px;
+                    height: 100px;
+                }
+                p{
+                    padding-top: 10px;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #666;
+                }
+            }
+        }
+        /****************КОНТАКТЫ******************/
+
+        section#contacts{
+            padding: 30px;
+            form{
+                padding-top: 30px;
+                .form-row{
+                    padding: 0;
+                    margin: 0;
+                    label{
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: bold;
+                    }
+                    input{
+                        padding: 25px 30px;
+                        padding-left: 10px;
+                    }
+                }
+                
+                .textarea{
+                    width: 95%;
+                    margin-left: 15px;
+                    label{
+
+                        margin-top: 30px;
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: bold;
+                    }
+                    textarea{
+                        height: 250px;
+                    }
+                    .button{
+                        padding: 0;
+                        margin: 10px 0;
+                        button{
+                            font-size: 20px;
+                            padding: 10px 25px;
+                            text-shadow: 2px 2px 7px #000;
+                            
+                            background: #5479e4;
+                            color: #fff;
+                            transition: all 0.04s;
+                            letter-spacing: 0.07em;
+                            &:hover{
+                                box-shadow: 2px 2px 7px #000;
+                               background: #607fda; 
+
+                            }
+                        }
+                    }
+                }
+            }
+            .contacts{
+                padding-top: 30px;
+                .office{
+                    text-align: center;
+                    h3{
+                        text-shadow: 0px 0px 25px #21c95c;
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        color: #666;
+                        padding-bottom: 40px;
+                    }
+                    ul.types{
+                        margin-left: 100px;
+                        
+                        li{
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #777;
+                            padding: 15px;
+                            list-style-type: circle;
+                        }
+                    }
+                    .title-work{
+                        h3{
+                            margin: 0;
+                            padding-bottom: 20px;
+                            margin-top: 30px;
+                        }
+                    }
+                    .workday{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            width: 25px;
+                            height: auto;
+                        }
+                        h5{
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #777;
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        /****************ФУТЕР******************/
+
+        footer{
+            padding: 50px 0;
+            background: #c4bfc4;
+            .office{
+                ul.types{
+                    li{
+                        font-size: 20px;
+                        line-height: 26px;
+                        color: #000;
+                        padding: 15px;
+                        padding-top: 0;
+                        list-style-type: circle;
+                    }
+                }
+            }
+            .smm{
+                h4{
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: #000;
+                    margin-bottom: 20px;
+                }
+                img{
+                    line-height: 50%;
+                    width:50px;
+                    padding: 3px;
+                    height: 50px;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+            }
+            .author{
+                h4{
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: #000;
+                    margin-bottom: 20px;
+                }
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 24px;
+                    color: #888;
+                }
+            }
+        }
+        /****************МЕДИАЗАПРОСЫ******************/
+
+        @media (min-width: 320px) and (max-width: 640px){
+            .title{
+                padding: 0;
+                h2{
+                    padding: 30px 0;
+                    font-size: 24px;
+                }
+
+            }
+            header{
+                .top-header{
+                    .logo{
+                        h2{
+                            font-size: 16px;
+                        }
+                    }
+                    nav{
+                        display: none;
+                    }
+                    .phone{
+                        text-align: center;
+                        a{
+                            text-align: left;
+                            font-size: 16px;
+                        }
+                        p{
+                            padding-top: 5px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+            section#main{
+                .head-title{
+                    h2{
+                        font-size: 24px;
+                        line-height: 27px;
+                    }
+                    p{
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                    div{
+                        button{
+                            font-size: 14px;
+                            padding: 10px 20px;
+                            &:hover{
+                                margin-bottom: 72px;
+                                font-size: 14px;
+                                padding: 10px 20px;
+                            }
+                        }
+                    }
+                    .down{
+                        a{
+                            img{
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section#about-us{
+                .about-us-text{
+                    h3{
+                        font-size: 20px;
+                            }
+                    p{
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 40px;
+                        }
+                    }
+                .about-us-1, .about-us-2, .about-us-3{
+                    
+                    padding: 30px 0;
+                }
+                .about-us{
+                    margin: 0;
+                    
+
+                    .about-us-text{
+                        h3{
+                            font-size: 20px;
+                            }
+                        p{
+                            font-size: 16px;
+                            line-height: 20px;
+                            margin-bottom: 40px;
+                            }
+                        }
+                    .about-us-img{
+                        text-align: center;
+                        img{
+                            text-align: center;
+                            width: 400px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+
+            section#helps{
+                .card-1, .card-2, .card-3{
+                    .helps-img{
+                        img{
+                            margin-left: 0;
+                            text-align: center;
+                            width: 200px;
+                            height: 150px;
+                        }
+                    }
+                    .description{
+                        h4{
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                        p{
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+
+            section#best{
+                .best{
+                    margin: 0;
+                    margin-bottom: 70px;
+                    padding: 0;
+                    h4{
+                        height: auto;
+                        padding: 0;
+                        margin: 0;
+                        padding-top: 20px;
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                    p{
+                        padding: 20px 0;
+                        margin: 0;
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            section#contacts{
+                form{
+                    .form-row{
+                        label{
+                            font-size: 14px;
+                        }
+                        input{
+                            padding: 15px 15px;
+                        }
+                    }
+                    .textarea{
+                    label{
+                        font-size: 16px;
+                    }
+                    textarea{
+                        height: 100px;
+                        width: 100%;
+                    }
+                    .button{
+                        button{
+                            font-size: 16px;
+                        }
+                    }
+                  }
+                }
+                .contacts{
+                    .office{
+                        h3{
+                            font-size: 20px;
+                        }
+                        ul.types{
+                            text-align: center;
+                             padding: 0;
+                             margin-left: 0;
+                            li{
+                                list-style: none;
+                                font-size: 14px;
+                            }
+                        }
+                        .workday{
+                            h5{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            footer{
+                font-size: 14px;
+                .office{
+                    margin-left: 30px;
+                    ul.types{
+                    text-align: center;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        font-size: 16px;
+                    }
+                }
+              }
+              .smm{
+                padding: 25px 0;
+                text-align: center;
+              }
+              .author{
+                text-align: center;
+                a{
+                    font-size: 20px;
+                }
+              }
+            }
+        }
+
+
+
+        @media (min-width: 640px) and (max-width: 768px){
+            .title{
+                padding: 0;
+                h2{
+                    padding: 30px 0;
+                    font-size: 32px;
+                }
+
+            }
+            header{
+                .top-header{
+                    .logo{
+                        h2{
+                            font-size: 24px;
+                        }
+                    }
+                    nav{
+                        display: none;
+                    }
+                    .phone{
+                        text-align: center;
+                        a{
+                            text-align: left;
+                            font-size: 20px;
+                        }
+                        p{
+                            padding-top: 10px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            section#main{
+                .head-title{
+                    h2{
+                        font-size: 28px;
+                        line-height: 30px;
+                    }
+                    p{
+                        font-size: 20px;
+                        line-height: 22px;
+                    }
+                    div{
+                        button{
+                            font-size: 18px;
+                            padding: 10px 20px;
+                            &:hover{
+                                margin-bottom: 72px;
+                                font-size: 14px;
+                                padding: 10px 20px;
+                            }
+                        }
+                    }
+                    .down{
+                        a{
+                            img{
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section#about-us{
+                .about-us-text{
+                    h3{
+                        font-size: 20px;
+                            }
+                    p{
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 40px;
+                        }
+                    }
+                .about-us-1, .about-us-2, .about-us-3{
+                    
+                    padding: 50px 0;
+                }
+                .about-us{
+                    margin: 0;
+                    
+
+                    .about-us-text{
+                        h3{
+                            font-size: 28px;
+                            line-height: 32px;
+                            }
+                        p{
+                            font-size: 20px;
+                            line-height: 24px;
+                            margin-bottom: 40px;
+                            }
+                        }
+                    .about-us-img{
+                        text-align: center;
+                        img{
+                            margin-left: 100px;
+                            text-align: center;
+                            width: 400px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+
+            section#helps{
+                .card-1, .card-2, .card-3{
+                    .helps-img{
+                        img{
+                            margin-left: 0;
+                            text-align: center;
+                            width: 350px;
+                            height: 250px;
+                        }
+                    }
+                    .description{
+                        h4{
+                            font-size: 28px;
+                            line-height: 32px;
+                        }
+                        p{
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+
+            section#best{
+                .best{
+                    margin: 0;
+                    margin-bottom: 70px;
+                    padding: 20px;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                    h4{
+                        height: auto;
+                        padding: 0;
+                        margin: 0;
+                        padding-top: 30px;
+                        font-size: 28px;
+                        line-height: 32px;
+                    }
+                    p{
+                        padding: 20px 0;
+                        margin: 0;
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            section#contacts{
+                form{
+                    .form-row{
+                        label{
+                            font-size: 18px;
+                        }
+                        input{
+                            padding: 25px 25px;
+                        }
+                    }
+                    .textarea{
+                    label{
+                        font-size: 18px;
+                    }
+                    textarea{
+                        height: 200px;
+                        width: 100%;
+                    }
+                    .button{
+                        button{
+                            font-size: 20px;
+                        }
+                    }
+                  }
+                }
+                .contacts{
+                    .office{
+                        h3{
+                            font-size: 22px;
+                        }
+                        ul.types{
+                            text-align: center;
+                            margin-left: 0;
+                            padding: 0;
+                            li{
+                                list-style: none;
+                                font-size: 18px;
+                            }
+                        }
+                        .workday{
+                            h5{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            footer{
+                font-size: 20px;
+                .office{
+                    ul.types{
+                    text-align: center;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        font-size: 20px;
+                    }
+                }
+              }
+              .smm{
+                padding: 25px 0;
+                text-align: center;
+              }
+              .author{
+                text-align: center;
+                a{
+                    font-size: 24px;
+                }
+              }
+            }
+        } 
+
+
+        @media (min-width: 767px) and (max-width: 992px){
+            .title{
+                padding: 0;
+                h2{
+                    padding: 30px 0;
+                    font-size: 32px;
+                }
+
+            }
+            header{
+                .top-header{
+                    .logo{
+                        h2{
+                            font-size: 24px;
+                        }
+                    }
+                    nav{
+                        display: block;
+                        ul{
+                            a{
+                                font-size: 12px;
+                                padding: 0px;
+                            }
+                            a.onas{
+                                display: none;
+                            }
+                        }
+                    }
+                    .phone{
+                        text-align: center;
+                        a{
+                            text-align: right;
+                            font-size: 20px;
+                        }
+                        p{
+                            padding-top: 10px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            section#main{
+                .head-title{
+                    h2{
+                        font-size: 28px;
+                        line-height: 30px;
+                    }
+                    p{
+                        font-size: 20px;
+                        line-height: 22px;
+                    }
+                    div{
+                        button{
+                            font-size: 18px;
+                            padding: 10px 20px;
+                            &:hover{
+                                margin-bottom: 72px;
+                                font-size: 14px;
+                                padding: 10px 20px;
+                            }
+                        }
+                    }
+                    .down{
+                        a{
+                            img{
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section#about-us{
+                .about-us-text{
+                    h3{
+                        font-size: 22px;
+                            }
+                    p{
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 40px;
+                        }
+                    }
+                .about-us-1, .about-us-2, .about-us-3{
+                    
+                    padding: 50px 0;
+                }
+                .about-us{
+                    margin: 0;
+                    
+
+                    .about-us-text{
+                        h3{
+                            font-size: 28px;
+                            line-height: 32px;
+                            }
+                        p{
+                            font-size: 20px;
+                            line-height: 24px;
+                            margin-bottom: 40px;
+                            }
+                        }
+                    .about-us-img{
+                        img{
+                            margin-top: 75px;
+                            text-align: center;
+                            width: 400px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+
+            section#helps{
+                .card-1, .card-2, .card-3{
+                    .helps-img{
+                        img{
+                            margin-left: 0;
+                            margin-top: 50px;
+                            text-align: center;
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                    .description{
+                        h4{
+                            font-size: 28px;
+                            line-height: 32px;
+                        }
+                        p{
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+
+            section#best{
+                .best{
+                    margin: 0;
+                    margin-bottom: 70px;
+                    padding: 20px;
+                    
+                    h4{
+                        height: 100px;
+                        padding: 0;
+                        margin: 0;
+                        padding-top: 30px;
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                    p{
+                        padding: 20px 0;
+                        margin: 0;
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            section#contacts{
+                form{
+                    .form-row{
+                        label{
+                            font-size: 18px;
+                        }
+                        input{
+                            padding: 25px 25px;
+                        }
+                    }
+                    .textarea{
+                    label{
+                        font-size: 18px;
+                    }
+                    textarea{
+                        height: 200px;
+                        width: 100%;
+                    }
+                    .button{
+                        button{
+                            font-size: 20px;
+                        }
+                    }
+                  }
+                }
+                .contacts{
+                    .office{
+                        h3{
+                            font-size: 22px;
+                        }
+                        ul.types{
+                            text-align: center;
+                            margin-left: 0;
+                            padding: 0;
+                            li{
+                                list-style: none;
+                                font-size: 18px;
+                            }
+                        }
+                        .workday{
+                            h5{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            footer{
+                font-size: 20px;
+                .office{
+                    ul.types{
+                    text-align: center;
+                    padding: 0;
+                    li{
+                        list-style: none;
+                        font-size: 20px;
+                    }
+                }
+              }
+              .smm{
+                text-align: center;
+              }
+              .author{
+                text-align: center;
+                a{
+                    text-align: left;
+                    font-size: 18px;
+                }
+              }
+            }
+        }       /****************Базовые настройки******************/
+                                                                                /****************Базовые настройки******************/
+                                                                                        /****************Базовые настройки******************/
+                                                                                                /****************Базовые настройки******************/
+                                                                                                        /****************Базовые настройки******************/
+                                                                                                                /****************Базовые настройки******************/        /****************Базовые настройки******************/
