@@ -850,7 +850,7 @@ footer#footer .description__hide {
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 568px) {
   footer#footer {
     padding: 35px;
   }
