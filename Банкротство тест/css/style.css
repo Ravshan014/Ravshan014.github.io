@@ -1,0 +1,881 @@
+body {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'Museo Sans 500 Medium';
+  src: url("MuseoSansCyrl-500.eot");
+  src: url("MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("MuseoSansCyrl-500.woff") format("woff"), url("MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 700 Bold';
+  src: url("MuseoSansCyrl-700.eot");
+  src: url("MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("MuseoSansCyrl-700.woff") format("woff"), url("MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 900 Black';
+  src: url("MuseoSansCyrl-900.eot");
+  src: url("MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("MuseoSansCyrl-900.woff") format("woff"), url("MuseoSansCyrl-900.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 300 Light';
+  src: url("MuseoSansCyrl-300.eot");
+  src: url("MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("MuseoSansCyrl-300.woff") format("woff"), url("MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 100 Thin';
+  src: url("MuseoSansCyrl-100.eot");
+  src: url("MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("MuseoSansCyrl-100.woff") format("woff"), url("MuseoSansCyrl-100.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+button, a, input, select {
+  outline: none;
+}
+
+button:active, a:active, input:active, select:active {
+  outline: none;
+}
+
+header#header {
+  padding: 10px;
+}
+
+header#header .nawbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header#header .nawbar .navbar__logo h1 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #313c47;
+  font-family: 'Museo Sans' sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+header#header .nawbar .navbar__logo p {
+  color: #949ba4;
+  font-family: 'Museo Sans' sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+header#header .nawbar .navbar__menu ul li {
+  list-style: none;
+}
+
+header#header .nawbar .navbar__menu ul li a {
+  padding: 9px;
+  text-decoration: none;
+  color: #949ba4;
+  font-family: 'Museo Sans' sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header#header .nawbar .navbar__menu ul li a:hover {
+  color: #5d6165;
+}
+
+header#header .nawbar .navbar__burger {
+  display: none;
+}
+
+header#header .nawbar .navbar__mobile {
+  display: none;
+}
+
+header#header .nawbar .navbar__phone a {
+  text-decoration: none;
+  color: #313c47;
+  font-family: 'Museo Sans' sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+header#header .nawbar .navbar__phone p {
+  color: #949ba4;
+  font-family: 'Museo Sans' sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+section#filter {
+  margin: 30px 0;
+  padding-bottom: 70px;
+}
+
+section#filter .filter .filter__menu {
+  margin-left: 20px;
+}
+
+section#filter .filter .filter__menu img {
+  src: '../img/home.png';
+  background-size: cover;
+}
+
+section#filter .filter .filter__menu p {
+  font-size: 16px;
+}
+
+section#filter .filter .filter__title {
+  font-size: 36px;
+}
+
+section#filter .filter .filter__title .filter__description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section#filter .filter .filter__nav {
+  margin-top: 50px;
+  margin-left: 15px;
+}
+
+section#filter .filter .filter__nav ul.pagination li.page-item {
+  border-radius: 10px;
+}
+
+section#filter .filter .filter__nav ul.pagination li.page-item a.page-link {
+  padding: 9px 17px;
+  text-decoration: none;
+  color: #8d97a0;
+}
+
+section#filter .filter .filter__nav ul.pagination li.page-item a.page-link:hover {
+  color: #fff;
+  background: #8d97a0;
+  opacity: .8;
+}
+
+section#filter .filter .filter__inputs {
+  margin-top: 30px;
+}
+
+section#filter .filter .filter__inputs select#status {
+  height: 62px;
+  font-size: 16px;
+}
+
+section#filter .filter .filter__inputs select#status:focus {
+  border: none;
+  outline: none;
+}
+
+section#filter .filter .filter__inputs select#status option {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section#filter .filter .filter__inputs select#status input {
+  height: 65px;
+  height: auto;
+  fnt-size: 16px;
+}
+
+section#filter .filter .filter__inputs input {
+  padding: 30px;
+  font-size: 16px;
+}
+
+section#filter .filter .filter__inputs input:focus {
+  border: none;
+  outline: none;
+}
+
+section#filter .filter .filter__inputs button.search {
+  height: 62px;
+  font-size: 16px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+section#filter .filter .filter__inputs button.search img {
+  vertical-align: middle;
+  height: 50%;
+}
+
+section#table {
+  padding: 100px;
+  background: #f8fafc;
+}
+
+section#table .table__full {
+  padding: 0;
+  margin: 0 auto;
+}
+
+section#table .table__full .table__head {
+  border: solid 2px #f3f6f9;
+  background: #f3f6f9;
+  font-size: 16px;
+  font-family: 'Museo Sans 700 Bold' sans-serif;
+}
+
+section#table .table__full .table__body {
+  font-size: 16px;
+  background: #fff;
+}
+
+section#table .table__download {
+  text-align: center;
+  padding: 65px;
+}
+
+section#table .table__download .download__btn {
+  text-transform: uppercase;
+  color: #4da1ff;
+  padding: 12px 35px;
+  border: solid 1px #4da1ff;
+  border-radius: 5px;
+}
+
+section#table .table__download .download__btn:hover {
+  background: #4da1ff;
+  color: #fff;
+}
+
+section#russianMap {
+  padding: 30px;
+  background: #f8fafc;
+}
+
+section#russianMap .map .map__title {
+  color: #2e3943;
+  font-family: 'Museo Sans' sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+section#russianMap .map .map__description {
+  text-align: center;
+  color: #949ba4;
+  font-family: 'Museo Sans' sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+section#russianMap .map .map-sm {
+  display: none;
+}
+
+section#russianMap .map .map-sm img {
+  display: none;
+}
+
+section#russianMap .map .map__map {
+  width: 1160px;
+  height: 577px;
+  position: relative;
+}
+
+section#russianMap .map .map__map svg.map__svg {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  height: 115%;
+  width: 100%;
+}
+
+section#russianMap .map .map__map svg.map__svg a.part-link {
+  text-decoration: none;
+  cursor: default;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section#russianMap .map .map__map svg.map__svg a.part-link .part {
+  fill: #6eadf3;
+  stroke: #fff;
+}
+
+section#consult {
+  background: #4da1ff;
+  padding: 60px;
+}
+
+section#consult .consult__title {
+  padding: 30px 0 0 0;
+  font-size: 44px;
+  line-height: 56px;
+  font-family: 'Museo Sans' sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+section#consult .consult__text {
+  color: #fff;
+  font-size: 22px;
+  line-height: 32px;
+  font-family: 'Museo Sans' sans-serif;
+  font-weight: 300;
+}
+
+section#consult button.consult__btn {
+  margin: 30px 0;
+  text-transform: uppercase;
+  background: transparent;
+  font-family: 'Museo Sans' sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 16px 40px;
+  border: solid 2px #ffffff;
+  color: #fff;
+}
+
+section#consult button.consult__btn:hover {
+  color: #4da1ff;
+  background: #fff;
+}
+
+footer#footer {
+  padding: 60px;
+}
+
+footer#footer .footer__description .description__nav ul li {
+  list-style: none;
+}
+
+footer#footer .footer__description .description__nav ul li a {
+  padding: 13px;
+  padding-left: 0;
+  text-decoration: none;
+  color: #949ba4;
+  font-family: 'Museo Sans' sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer#footer .footer__description .description__copy {
+  font-size: 14px;
+  color: #949ba4;
+}
+
+footer#footer .footer__description .description__copy p {
+  margin: 0;
+}
+
+footer#footer .footer__contact {
+  text-align: center;
+}
+
+footer#footer .footer__contact .contact__phone {
+  font-size: 28px;
+  font-family: 'Museo Sans' sans-serif;
+  font-weight: 700;
+}
+
+footer#footer .footer__contact .contact__link {
+  padding: 5px;
+  border-bottom: solid 2px #949ba4;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #949ba4;
+}
+
+footer#footer .description__hide {
+  display: none;
+  font-size: 14px;
+  color: #949ba4;
+}
+
+@media screen and (max-width: 1200px) {
+  header#header .nawbar .navbar__logo h1 {
+    font-size: 18px;
+  }
+  header#header .nawbar .navbar__logo p {
+    font-size: 10px;
+  }
+  header#header .nawbar .navbar__menu ul li a {
+    font-size: 13px;
+  }
+  header#header .nawbar .navbar__phone a {
+    font-size: 18px;
+  }
+  header#header .nawbar .navbar__phone p {
+    font-size: 11px;
+  }
+  section#russianMap .map__map {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header#header .nawbar .navbar__logo h1 {
+    font-size: 18px;
+  }
+  header#header .nawbar .navbar__logo p {
+    font-size: 12px;
+  }
+  header#header .nawbar .navbar__menu {
+    display: none;
+  }
+  header#header .nawbar .navbar__phone a {
+    font-size: 18px;
+  }
+  header#header .nawbar .navbar__phone p {
+    font-size: 12px;
+  }
+  header#header .nawbar .navbar__visible .visible__row .navbar__burger {
+    display: block;
+    margin-right: 25px;
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+  section#filter {
+    margin: 30px 0;
+    padding-bottom: 40pxs;
+  }
+  section#filter .filter .filter__menu {
+    margin-left: 10px;
+  }
+  section#filter .filter img {
+    src: '../img/home.png';
+    background-size: cover;
+  }
+  section#filter .filter p {
+    font-size: 16px;
+  }
+  section#filter .filter .filter__title {
+    font-size: 18px;
+  }
+  section#filter .filter .filter__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  section#filter .filter .filter__nav {
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  section#filter .filter .filter__nav ul.pagination li.page-item {
+    border-radius: 10px;
+  }
+  section#filter .filter .filter__nav ul.pagination li.page-item a.page-link {
+    padding: 9px 17px;
+    text-decoration: none;
+    color: #8d97a0;
+  }
+  section#filter .filter .filter__nav ul.pagination li.page-item a.page-link:hover {
+    color: #fff;
+    background: #8d97a0;
+    opacity: .8;
+  }
+  section#filter .filter .filter__inputs {
+    margin-top: 30px;
+  }
+  section#filter .filter .filter__inputs input {
+    padding: 20px;
+    font-size: 14px;
+  }
+  section#filter .filter .filter__inputs input:focus {
+    border: none;
+    outline: none;
+  }
+  section#filter .filter .filter__inputs button.search {
+    height: auto;
+    font-size: 14px;
+    padding: 12px;
+  }
+  section#table {
+    padding: 100px;
+  }
+  section#table .table__full .table__head {
+    font-size: 12px;
+  }
+  section#table .table__full .table__body {
+    font-size: 12px;
+  }
+  section#table .table__download {
+    text-align: center;
+    font-size: 16px;
+    padding: 45px;
+  }
+  section#table .table__download .download__btn {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  section#consult {
+    padding: 60px;
+  }
+  section#consult .consult__title {
+    padding: 30px 0 0 0;
+    font-size: 36px;
+  }
+  section#consult .consult__text {
+    font-size: 16px;
+  }
+  section#consult button.consult__btn {
+    font-size: 14px;
+    padding: 15px 30px;
+    margin: 30px 0;
+  }
+  footer#footer {
+    padding: 60px;
+  }
+  footer#footer .footer__description .description__nav ul li {
+    list-style: none;
+  }
+  footer#footer .footer__description .description__nav ul li a {
+    padding: 13px;
+    padding-left: 0;
+    text-decoration: none;
+    color: #949ba4;
+    font-family: 'Museo Sans' sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  footer#footer .description__copy {
+    font-size: 14px;
+    color: #949ba4;
+  }
+  footer#footer .description__copy p {
+    margin: 0;
+  }
+  .footer__contact {
+    text-align: center;
+  }
+  .footer__contact .contact__phone {
+    font-size: 28px;
+    font-family: 'Museo Sans' sans-serif;
+    font-weight: 700;
+  }
+  .footer__contact .contact__link {
+    padding: 5px;
+    border-bottom: solid 2px #949ba4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: #949ba4;
+  }
+  .description__hide {
+    display: none;
+    font-size: 14px;
+    color: #949ba4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header#header .nawbar .navbar__logo {
+    text-align: left;
+    padding-right: 0;
+    max-width: 100%;
+  }
+  header#header .nawbar .navbar__logo h1 {
+    font-size: 18px;
+  }
+  header#header .nawbar .navbar__logo p {
+    font-size: 12px;
+  }
+  header#header .nawbar .navbar__visible .visible__row .navbar__burger {
+    padding: 10px;
+  }
+  section#filter .filter .filter__menu {
+    margin-left: 10px;
+  }
+  section#filter .filter .filter__title {
+    font-size: 18px;
+  }
+  section#filter .filter .filter__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  section#filter .filter .filter__nav {
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  section#filter .filter .filter__nav ul.pagination li.page-item a.page-link {
+    padding: 5px 15px;
+  }
+  section#filter .filter .filter__inputs {
+    margin-top: 30px;
+  }
+  section#filter .filter .filter__inputs input {
+    padding: 10px;
+    font-size: 12px;
+  }
+  section#filter .filter .filter__inputs button.search {
+    font-size: 14px;
+    padding: 6px;
+  }
+  section#table {
+    padding: 100px 0px;
+  }
+  section#table .table__full .table__head {
+    font-size: 12px;
+  }
+  section#table .table__full .table__body {
+    font-size: 12px;
+  }
+  section#table .table__download {
+    text-align: center;
+    font-size: 16px;
+    padding: 45px;
+  }
+  section#table .table__download .download__btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  section#consult {
+    padding: 35px;
+  }
+  section#consult .consult__title {
+    padding: 30px 0 0 0;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  section#consult .consult__text {
+    font-size: 16px;
+  }
+  section#consult button.consult__btn {
+    font-size: 12px;
+    padding: 10px;
+    margin: 30px 0;
+  }
+  footer#footer {
+    padding: 35px;
+  }
+  footer#footer .footer__description .description__nav {
+    display: none;
+  }
+  footer#footer .footer__description .description__copy {
+    display: none;
+  }
+  footer#footer .footer__description .description__copy p {
+    margin-bottom: 10px;
+    margin-right: 40px;
+    display: block;
+  }
+  footer#footer .footer__contact {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  footer#footer .footer__contact .contact__phone {
+    font-size: 22px;
+  }
+  footer#footer .footer__contact .contact__link {
+    border-bottom: solid 1px;
+    padding: 1px;
+    font-size: 12px;
+  }
+  footer#footer .description__hide {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header#header .nawbar .navbar__logo h1 {
+    font-size: 18px;
+  }
+  header#header .nawbar .navbar__logo p {
+    font-size: 10px;
+  }
+  header#header .nawbar .navbar__phone {
+    display: none;
+  }
+  header#header .nawbar .navbar__visible .visible__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header#header .nawbar .navbar__visible .visible__row .navbar__mobile {
+    margin-right: 0;
+    padding-right: 0;
+    padding: 10px;
+    display: block;
+    margin-bottom: 12px;
+  }
+  header#header .nawbar .navbar__visible .visible__row .navbar__burger {
+    padding: 10px;
+  }
+  section#filter .filter .filter__menu {
+    margin-left: 10px;
+  }
+  section#filter .filter .filter__title {
+    font-size: 18px;
+  }
+  section#filter .filter .filter__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  section#filter .filter .filter__nav {
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  section#filter .filter .filter__nav ul.pagination li.page-item a.page-link {
+    padding: 5px 15px;
+  }
+  section#filter .filter .filter__inputs {
+    margin-top: 30px;
+  }
+  section#filter .filter .filter__inputs input {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  section#filter .filter .filter__inputs button.search {
+    margin-top: 11px;
+    font-size: 14px;
+    padding: 9px;
+  }
+  section#consult {
+    padding: 35px;
+  }
+  section#consult .consult__title {
+    padding: 30px 0 0 0;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  section#consult .consult__text {
+    font-size: 14px;
+  }
+  section#consult button.consult__btn {
+    text-align: center;
+    margin: 30px 0;
+  }
+  footer#footer {
+    padding: 35px;
+  }
+  footer#footer .footer__description .description__nav {
+    display: none;
+  }
+  footer#footer .footer__description .description__copy {
+    display: none;
+  }
+  footer#footer .footer__contact {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  footer#footer .footer__contact .contact__phone {
+    font-size: 18px;
+  }
+  footer#footer .footer__contact .contact__link {
+    border-bottom: solid 1px;
+    padding: 1px;
+    font-size: 10px;
+  }
+  footer#footer .description__hide {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+  }
+  section#table {
+    padding: 100px 20px;
+  }
+  section#table .table__full .table__head {
+    font-size: 12px;
+  }
+  section#table .table__full .table__head .inn {
+    display: none;
+  }
+  section#table .table__full .table__body {
+    font-size: 12px;
+  }
+  section#table .table__full .table__body .inn {
+    display: none;
+  }
+  section#table .table__download {
+    text-align: center;
+    font-size: 16px;
+    padding: 45px;
+  }
+  section#table .table__download .download__btn {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  section#consult {
+    text-align: center;
+    padding: 35px;
+  }
+  section#consult .consult__title {
+    padding: 30px 0 0 0;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  section#consult .consult__text {
+    line-height: 14px;
+    font-size: 12px;
+  }
+  section#consult button.consult__btn {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 320px) {
+  footer#footer {
+    padding: 35px;
+  }
+  footer#footer .footer__description .description__nav {
+    display: none;
+  }
+  footer#footer .footer__description .description__copy {
+    display: none;
+  }
+  footer#footer .footer__contact {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  footer#footer .footer__contact .contact__phone {
+    font-size: 18px;
+  }
+  footer#footer .footer__contact .contact__link {
+    border-bottom: solid 1px;
+    padding: 1px;
+    font-size: 10px;
+  }
+  footer#footer .description__hide {
+    display: block;
+    text-align: center;
+    font-size: 8px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

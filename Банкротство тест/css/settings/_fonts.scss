@@ -1,0 +1,69 @@
+body{
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Museo Sans 500 Medium';
+    src: url('MuseoSansCyrl-500.eot');
+    src: url('MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+    url('MuseoSansCyrl-500.woff') format('woff'),
+    url('MuseoSansCyrl-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Museo Sans 700 Bold';
+        src: url('MuseoSansCyrl-700.eot');
+        src: url('MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-700.woff') format('woff'),
+        url('MuseoSansCyrl-700.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+     @font-face {
+            font-family: 'Museo Sans 900 Black';
+            src: url('MuseoSansCyrl-900.eot');
+            src: url('MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+            url('MuseoSansCyrl-900.woff') format('woff'),
+            url('MuseoSansCyrl-900.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            }
+
+     @font-face {
+             font-family: 'Museo Sans 300 Light';
+             src: url('MuseoSansCyrl-300.eot');
+             src: url('MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+             url('MuseoSansCyrl-300.woff') format('woff'),
+             url('MuseoSansCyrl-300.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            }
+
+    @font-face {
+        font-family: 'Museo Sans 100 Thin';
+        src: url('MuseoSansCyrl-100.eot');
+        src: url('MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+        url('MuseoSansCyrl-100.woff') format('woff'),
+        url('MuseoSansCyrl-100.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        @mixin thin {
+            font-family: 'Museo Sans 100 Thin', sans-serif;
+        }
+
+         @mixin medium {
+            font-family: 'Museo Sans 500 Medium', sans-serif;
+        }
+
+        @mixin bold {
+            font-family: 'Museo Sans 700 Bold', sans-serif;
+        } 
+
+        @mixin black {
+            font-family: 'Museo Sans 900 Black', sans-serif;
+        }
