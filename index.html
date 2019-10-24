@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+	
+<header class="header">
+
+		<div class="container">
+			
+
+		<div class="top-header">
+
+			<div class="top-header__logo">
+				<img src="app/img/header/logo.png" alt="" class="logo__img">
+				<h2 class="logo__text">Degree</h2>
+			</div>
+
+			<div class="top-header-right">
+
+				<div class="phone">
+					<img src="app/img/header/phone.png" alt="phone" class="phone__img">
+
+					<div class="text">
+						<p class="phone__text">Есть вопросы? Звоните!</p>
+						<h3 class="phone__number">8 /800/ 259 09 36</h3>
+					</div>
+
+				</div>
+
+				<div class="menu">
+					<div class="menu__burger">
+						<span class="burger"></span>
+					</div>
+					<h4 class="menu__text">Меню</h4>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="only-mobile-menu">
+			
+			<ul class="menu-xs">
+				<li class="menu-xs__list">
+					<a href="#about" class="menu-xs__link">Наши услуги</a>
+				</li>
+
+				<li class="menu-xs__list">
+					<a href="#" class="menu-xs__link">Калькулятор</a>
+				</li>
+
+				<li class="menu-xs__list">
+					<a href="#" class="menu-xs__link">Отзывы</a>
+				</li>
+
+				<li class="menu-xs__list">
+					<a href="#" class="menu-xs__link">Преимущества</a>
+				</li>
+
+				<li class="menu-xs__list">
+					<a href="#" class="menu-xs__link">Контакты</a>
+				</li>
+			</ul>
+
+		</div>
+	
+		</div>
+
+
+	<div id="banner">
+		
+		<div class="banner">
+		<div class="banner-xs"></div>
+			<div class="container">
+
+			<div class="banner-title">
+				<h1 class="banner-title__title">Услиги по 3D моделированию <span>полный спектр услуг</span></h1>
+				<p class="banner-title__text">Оставьте заявку сейчас и получите дизайн интерьера 25 m<sup>2</sup> бесплатно</p>
+			</div>
+			
+			<form action="form.php" class="banner-all">
+
+				<div class="banner-form">
+					
+					<input type="text" class="banner-form__input" placeholder="Ваше имя" required>
+
+					<input type="text" class="banner-form__input" placeholder="Email" required>
+
+					<input type="text" class="banner-form__input" placeholder="Номер телефона" required>
+
+				</div>
+
+				<button class="banner-all__button button">Оставить заявку</button>
+
+				<p class="banner-all__text">*Мы гарантируем конфидициальность передаваемых данных</p>
+
+				<a href="#about" class="scroll"><img src="app/img/banner/mouse.png" alt="" class="scroll__img"></a>
+
+			</form>
+		</div>
+
+
+		</div>
+
+
+
+	</div>
+
+</header>
+
+
+<section id="about">
+
+	<div class="container">
+		<div class="about-title">
+
+		<h2 class="about-title__title">Наши услуги</h2>
+
+	</div>
+
+	<div class="about-all">
+
+		<div class="card about-all__card">
+
+			<div class="card__content">
+
+				<h3 class="card__title">Дизайн интерьера</h3>
+				<p class="card__text">Услуга, направленная на разработку интерьеров, с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении</p>
+				<button class="button">Оставить заявку</button>
+			</div>
+
+			<div class="card__image">
+				<img src="app/img/about/1.jpg" alt="" class="card__img">
+			</div>
+		</div>
+
+		<div class="card card--rl about-all__card">
+
+			<div class="card__content card__content--rl">
+
+				<h3 class="card__title">Дизайн экстрерьера</h3>
+				<p class="card__text">Услуга, направленная на разработку дизайна прилегающих эдементов  зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+
+			</div>
+
+			<div class="card__image">
+				<img src="app/img/about/2.jpg" alt="" class="card__img">
+			</div>
+		</div>
+
+		<div class="card about-all__card">
+
+			<div class="card__content">
+
+				<h3 class="card__title">Визуализация</h3>
+				<p class="card__text">Услуга, направленная на разработку дизайна прилегающих эдементов  зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+
+			</div>
+
+			<div class="card__image">
+				<img src="app/img/about/3.jpg" alt="" class="card__img">
+			</div>
+		</div>
+	</div>
+	</div>
+
+</section>
+
+
+
+<section id="calculator">
+
+	<div class="container">
+		
+
+		<div class="calc-title">
+
+			<h2 class="calc-title__title">Расчитать стоимость</h2>
+
+			<p class="calc-title__text">Расчитайте предварительную стоимость разработки интерьера</p>
+
+		</div>
+
+		<div class="calc-all">
+
+			<div class="calc-count count">
+
+					<div class="count-slider">
+						<h4 class="count-slider__title">Площадь помещения:</h4>
+						<input type="range" step="" class="count__input">
+					</div>
+
+					<div class="packet">
+						<h4 class="packet__title">Выберите пакет:</h4>
+						<button class="packet__button">Light</button>
+						<button class="packet__button">Medium</button>
+						<button class="packet__button">Full</button>
+					</div>
+
+			</div>
+
+			<div class="calc-answer">
+				<div class="square">
+					<p class="square__text">Площадь помещения:</p>
+					<h3 class="square"></h3>
+				</div>
+				<div class="cost1">
+					<p class="cost1__text">Средняя стоимость м<sup>2</sup>:</p>
+					<h3 class="cost1"></h3>
+				</div>
+				<div class="cost-all">
+					<p class="cost-all__text">Средняя стоимость объекта:</p>
+					<h3 class="cost-all"></h3>
+				</div>
+
+				<button class="consult-btn button">Получить консультацию </button>
+				<p class="call">или позвоните нам по телефону: <span> + 7 727 388 71 77</span> </p>
+
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+</section>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="dist/js/main.js"></script>
+</body>
+</html>
